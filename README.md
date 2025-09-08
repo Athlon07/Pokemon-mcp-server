@@ -7,12 +7,35 @@ Pokémon MCP Battle ServerThis project provides a Pokémon battle simulator powe
   - Status conditions (paralysis, sleep, burn, poison, freeze).End-of-turn effects (poison/burn damage, sleep duration).
   - Random Opponent: The opponent is chosen randomly from the full Pokédex for varied gameplay.
 
+# Flow Chart depicitng functionalities
+```mermaid
+flowchart LR
+    A[PokéAPI] --> B[MCP Server<br/>(Pokémon Battle Engine)]
+    B --> C[MCP Client<br/>(e.g., Claude Desktop)]
+    C --> D[MCP Tools]
+
+    subgraph Tools [Available MCP Tools]
+        D1[get_pokemon(name)]
+        D2[get_move(name)]
+        D3[start_battle(user_pokemon)]
+        D4[play_turn(state, move_user)]
+        D5[play_turn_chance(state, move_user)]
+    end
+
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+    D --> D5
+```
+
 # 📦 InstallationClone or download this repository:
 ```bash
 git clone [https://github.com/Athlon07/Pokemon-mcp-server.git]
 cd Pokemon-mcp-server
 ```
-Make sure you have Python 3.10+ installed.Create a virtual environment and install the dependencies:
+Make sure you have Python 3.10+ installed.
+Create a virtual environment and install the dependencies:
 
 # Create and activate the virtual environment
 ```bash
