@@ -10,8 +10,8 @@ Pokémon MCP Battle ServerThis project provides a Pokémon battle simulator powe
 # Flow Chart depicitng functionalities
 ```mermaid
 flowchart TD
-    A[PokéAPI] --> B["MCP Server: Pokémon Battle Engine"]
-    B --> C["MCP Client: Claude Desktop"]
+    A[PokéAPI] --> B["MCP Client: Claude Desktop"]
+    B --> C["MCP Server: Pokémon Battle Engine"]
     C --> D[MCP Tools]
 
     subgraph Tools [Available MCP Tools]
