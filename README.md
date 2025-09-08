@@ -11,15 +11,15 @@ Pokémon MCP Battle ServerThis project provides a Pokémon battle simulator powe
 ```mermaid
 flowchart TD
     A[PokéAPI] --> B["MCP Server: Pokémon Battle Engine"]
-    B --> C["MCP Client (e.g., Claude Desktop)"]
+    B --> C["MCP Client: Claude Desktop"]
     C --> D[MCP Tools]
 
     subgraph Tools [Available MCP Tools]
-        D1[get_pokemon(name)]
-        D2[get_move(name)]
-        D3[start_battle(user_pokemon)]
-        D4[play_turn(state, move_user)]
-        D5[play_turn_chance(state, move_user)]
+        D1[get_pokemon]
+        D2[get_move]
+        D3[start_battle]
+        D4[play_turn]
+        D5[play_turn_chance]
     end
 
     D --> D1
@@ -27,6 +27,7 @@ flowchart TD
     D --> D3
     D --> D4
     D --> D5
+
 ```
 
 
