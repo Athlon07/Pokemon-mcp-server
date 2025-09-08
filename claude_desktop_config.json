@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "pokemon-mcp": {
+      "command": "python",
+      "args": ["C:\\Users\\sahil\\OneDrive\\Desktop\\pokemon-mcp\\server.py"],
+      "cwd": "C:\\Users\\sahil\\OneDrive\\Desktop\\pokemon-mcp"
+    }
+  }
+}

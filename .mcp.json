@@ -1,0 +1,10 @@
+{
+    "servers": {
+      "pokemon": {
+        "command": "python",
+        "args": ["server.py"],
+        "transport": "stdio"
+      }
+    }
+  }
+  
