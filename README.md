@@ -22,14 +22,13 @@ flowchart TD
         D4[play_turn(state, move_user)]
         D5[play_turn_chance(state, move_user)]
     end
-
+```
     D --> D1
     D --> D2
     D --> D3
     D --> D4
     D --> D5
 
-```
 
 # 📦 InstallationClone or download this repository:
 ```bash
