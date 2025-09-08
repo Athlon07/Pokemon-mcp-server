@@ -57,3 +57,17 @@ Edit your client's configuration file to point to your local server. You will ne
   Plays one turn of the battle. You provide the current battle state and your chosen move. The opponent will select and execute its move automatically.
   - play_turn_chance(state: dict, move_user: str)
   This is an alias for play_turn for compatibility purposes. It functions identically.
+
+# 📝 Notes
+
+ - Uses PokéAPI as the data source
+ - Caches requests for efficiency
+ - Server can be connected to any MCP-compatible client
+ - Extendable with new mechanics or custom battle rules
+
+# 🌟 Benefits
+
+ - Interactive Pokémon battle system
+ - Lightweight and serverless MCP protocol integration
+ - Expandable battle logic (more conditions, moves, or AI strategies)
+ - Perfect playground for LLM + Pokémon mechanics experiments
