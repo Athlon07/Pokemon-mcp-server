@@ -1,11 +1,11 @@
 Pokémon MCP Battle ServerThis project provides a Pokémon battle simulator powered by the PokéAPI and the Model Context Protocol (MCP). It exposes MCP tools so that an LLM (or MCP inspector) can fetch Pokémon, fetch moves, start battles, and play turn-based battles with proper damage mechanics, type effectiveness, and status effects.
 
-# ✨ Features
--Fetch Pokémon: Fetches data from PokéAPI with caching to avoid repeated API calls.
--Fetch Moves: Retrieves move metadata like power, type, and status effects, also with caching.
--Turn-Based Battle System: Includes a comprehensive battle system with:Damage calculation (STAB, type effectiveness, critical hits).
--Status conditions (paralysis, sleep, burn, poison, freeze).End-of-turn effects (poison/burn damage, sleep duration).
--Random Opponent: The opponent is chosen randomly from the full Pokédex for varied gameplay.
+- # ✨ Features
+  - Fetch Pokémon: Fetches data from PokéAPI with caching to avoid repeated API calls.
+  - Fetch Moves: Retrieves move metadata like power, type, and status effects, also with caching.
+  - Turn-Based Battle System: Includes a comprehensive battle system with:Damage calculation (STAB, type effectiveness, critical hits).
+  - Status conditions (paralysis, sleep, burn, poison, freeze).End-of-turn effects (poison/burn damage, sleep duration).
+  - Random Opponent: The opponent is chosen randomly from the full Pokédex for varied gameplay.
 
 # 📦 InstallationClone or download this repository:
 ```bash
